@@ -219,12 +219,35 @@ let days = 4; */
 //   console.log("i = " + i);
 // }
 
-const friends = ["Sahar", "Shirin", "Yegane", "Negin", "nastaran"];
+// const friends = ["Sahar", "Shirin", "Yegane", "Negin", "nastaran"];
 
 // for (let i = 0; i < friends.length; i = i + 1) {
 //   console.log(friends[i]);
 // }
 
-for (let i = friends.length - 1; i >= 0; i = i - 1) {
-  console.log(friends[i]);
-}
+// for (let i = friends.length - 1; i >= 0; i = i - 1) {
+//   console.log(friends[i]);
+// }
+
+const samaneData = [
+  "Samane",
+  "Yaghoobi",
+  26,
+  "Software engineer",
+  ["Sahar", "Hasti", "Negin", "Mahla"],
+];
+
+const samaneObjectData = {
+  firstName: "Samane",
+  lastName: "Yaghoobi",
+  age: 26,
+  job: "Software engineer",
+  friends: ["Sahar", "Hasti", "Negin", "Mahla"],
+};
+
+samaneObjectData.country = "Iran";
+
+console.log(samaneObjectData);
+
+delete samaneObjectData.friends;
+console.log(samaneObjectData);
